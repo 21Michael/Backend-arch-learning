@@ -12,7 +12,6 @@ Learning backend architecture, security, optimization, NodeJS...
             3. Methods; ✅
             4. Response codes; ✅
             5. HTTP 1.0 vs HTTP 2.0; ✅
-            6. CORS;
           - Telnet; ✅
           - FTP; ✅
           - SMTP; ✅
@@ -108,51 +107,98 @@ Learning backend architecture, security, optimization, NodeJS...
 **Link:** https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F
 
 ### 3.1) API architectural styles (server - client):
-  - **REST:**
-    - <ins>JSONApi spec;
-    - <ins>REST-full Principles:</ins>
-    - <ins>Swagger;</ins>
-    - <ins>HATEOAS;</ins>
+  - **REST:** ✅
+    - <ins>REST-full Principles:</ins> ✅
+    - <ins>HATEOAS;</ins> ✅
   - **RPC:** ✅
-    - <ins>XHL-RPC; ✅
-    - <ins>JSON-RPC; ✅
-    - <ins>gRPC; ✅
-  - **GraphQL:**
- 
-### 3.2) Code organization:
+    - <ins>XHL-RPC;</ins> ✅
+    - <ins>JSON-RPC;</ins> ✅
+    - <ins>gRPC;</ins> ✅
+  - **GraphQL;** ✅
+  - **SOAP;**
+
+### 3.2) Client-Server communication specification:
+  - **JSONApi spec;**
+
+### 3.3) Code organization:
   - **Code separation;**
   - **File naming;**
   - **Modules:**
     - Circular dependencies;
-### 3.3) System Architectural patterns:
+  
+### 3.4) System Architectural patterns:
   - **Model-View-Controller (MVC);**
-  - **Model-View-Presenter;**
-  - **Model-View-ViewModel;**
+    - **Model-View-Presenter;**
+    - **Model-View-ViewModel;**
   - **Presentation-Abstraction-Control;**
   - **Naked objects;**
   - **Hierarchical Model-View-Controller;**
   - **View-Interactor-Presenter-Entity-Routing (VIPER);**
-### 3.4) Software Architectural pattern:
-  - **Event-driven architecture;**
-  - **Layered architecture;**
-  - **Hexagonal architecture;**
-  - **Microservices architecture;**
-  - **Monolith architecture;**
-### 3.5) Other:
+
+### 3.5) Software Architectural patterns:
+  - ### Monolithic architecture:
+    - **Layered (n-tier) architecture pattern:** ✅
+    - **Microkernel (plug-in) Architecture pattern;** ✅
+    - **Pipe-Filter Architecture pattern;**
+  - ### Distributed architecture:
+    - **Event-driven architecture pattern;** ✅
+    - **Microservices architecture pattern:**  ✅
+      - Conceptions and principles:  ✅
+        - DB management (DB per service); ✅
+        - Communication principle: ✅
+          - Sync communication (inter-service communication); ✅
+          - Async communication (Event Bus); ✅
+        - Independent principle; ✅
+        - Event synchronization; ✅
+      - Deployment Tools:  ✅
+        - Docker; ✅
+        - Kubernetes; ✅
+        - Skaffold; ✅
+      - Deployment Flow:  ✅
+        - SSR vs CSR; ✅
+        - Share common logic between services: ✅
+          - Repeat files in each service; ✅
+          - Common repository;  ✅
+          - NPM registry; ✅
+        - Work flow: ✅
+          - Repository types: ✅
+            - Monorepository; ✅
+            - Repository per service; ✅
+          - Deployment flow; ✅
+      - Security:  ✅
+        - Authorization services concepts; ✅
+        - JWT Auth; ✅
+        - Session ID Auth; ✅
+    - **Space-Based Architecture pattern;**
+    - **Service-oriented architecture pattern;**
+  - ### Hexagonal architecture pattern;
+  - ### Client-Server Architecture pattern;
+  - ### Master-Slave Architecture pattern;
+  - ### Serverless architecture pattern;
+### 3.6) Other:
   - **Heartbeat/Health check;**
   - **SaaS;**
   - **FaaS;**
   - **Long-Pooling;**
+  - **Swagger;**
 
 ## 4) NodeJS:
-  - **Express;**
-  - **Streams;**
-  - **Require process;**
-  - **Event Loop;**
-  - **Events:**
-    - **Event-driven development;**
-    - **Understanding of node's event system;**
-    - **Ability to write custom events.**
+  - **Frameworks:**
+    - **Express:**
+      - routing;
+      - middleware;
+  - **Engine mechanisms:**
+    - **Garbage collector;**
+    - **Streams;**
+    - **Asynchronicity / Event Loop;**
+    - **Node's event system;**
+  - **Embedded functionality:**
+    - **RELP;**
+    - **Streams API;**
+    - **Events:**
+      - **Event-driven development;**
+      - **Ability to write custom events;**
+    - **Require Process;**
 
 ## 5) Database:
 **Link:** https://github.com/21Michael/SQL-Study-Project

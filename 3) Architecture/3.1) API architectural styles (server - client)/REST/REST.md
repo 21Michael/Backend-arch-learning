@@ -190,3 +190,48 @@ connected directly to the end server or an intermediary along the way.
 Серверы могут временно расширять или кастомизировать функционал клиента, передавая ему 
 логику, которую он может исполнять. Например, это могут быть скомпилированные Java-апплеты 
 или клиентские скрипты на Javascript
+
+## Conclusion:
+Сама архитектура REST не привязана к конкретным технологиям и протоколам, но в реалиях 
+современного Веб, построение RESTful API почти всегда подразумевает использование HTTP и 
+каких-либо распространенных форматов представления ресурсов, например JSON, или, менее 
+популярного сегодня, XML. Для каждого формата существует специальная спецификация построения REST 
+на HTTP + формат данных (JSON -> JSON.API...). Также при построении сложных REST сервисов 
+обычно создается документация которая описывает способы и форматы данных для работы с API для
+этого используются специальные инструменты (SWAGGER...);
+
+**REST build by HTTP:**
+
+![link](https://habrastorage.org/r/w1560/webt/k1/nj/lm/k1njlm8egbrcguim8am6juym76s.png)
+
+### REST pros:
+  - **Decoupled client and server.** Decoupling the client and the server as much as possible, 
+  REST allows for a better abstraction than RPC. A system with abstraction levels is able 
+  to encapsulate its details to better identify and sustain its properties. This makes a 
+  REST API flexible enough to evolve over time while remaining a stable system.
+
+  - **Discoverability.** Communication between the client and server describes everything so that 
+  no external documentation is required to understand how to interact with the REST API.
+
+  - **Cache-friendly.** Reusing a lot of HTTP tools, REST is the only style that allows caching data 
+  on the HTTP level. In contrast, caching implementation on any other API will require 
+  configuring an additional cache module.
+
+  - **Multiple formats support.** The ability to support multiple formats for storing and exchanging
+  data is one of the reasons REST is currently a prevailing choice for building public APIs.
+    
+### REST cons:
+  - **No single REST structure.** There’s no exact right way to build a REST API. How to model
+    resources and which resources to model will depend on each scenario. This makes REST simple
+    in theory, but difficult in practice.
+
+  - **Big payloads.** REST returns a lot of rich metadata so that the client can understand 
+    everything necessary about the state of the application just from its responses. And this
+    chattiness is no big deal for a big network pipe with lots of bandwidth capacity. But 
+    that’s not always the case. This was the key driving factor for Facebook coming up with 
+    the description of GraphQL style in 2012.
+
+  - **Over- and under-fetching problems.** Containing either too much data or not enough of 
+    it, REST responses often create the need for another request.
+    
+![link](https://miro.medium.com/max/1194/1*9XJsQKCFytrvSFKDPg5zZg.png)

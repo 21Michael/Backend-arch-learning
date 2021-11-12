@@ -64,6 +64,10 @@ of the serialization and deserialization of the parameters.
 
 ![link](https://coderlessons.com/wp-content/uploads/images/gur/8a0fd91187a467189a4a3c1662b1d11a.png)
 
+**RPC uses two HTTP methods: GET, POST. Usually in API used one of these methods:**
+
+![link](https://habrastorage.org/r/w1560/webt/m2/i2/ua/m2i2uadak8sdzbge_pvqlnpu55s.png)
+
 ### RPC Pros:
   - **Straightforward and simple interaction.**  
     RPC uses GET to fetch information and POST for everything else. The mechanics of the interaction 
