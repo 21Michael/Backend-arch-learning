@@ -29,13 +29,20 @@ PUT, DELETE, PATCH.**
       
   ![link](https://maxlead.com/wp-content/uploads/2020/02/labeling-2-en.png)
 
-  <ins>**The problem:**</ins> SameSite cookies are a good additional protection measure against 
-  CSRF attacks, but **they are not yet implemented by all browsers and frameworks.** 
-
-  Because the notion of same site includes sub-domains, they also provide little 
-  protection against **<ins>sub-domain hijacking attacks.</ins> The protection against 
-  CSRF is as strong as the weakest sub-domain of your site: if even a single sub-domain
-  is compromised, then all protection lost.**
+  <ins>**The problem:**</ins>
+  - SameSite cookies are a good additional protection measure against 
+    CSRF attacks, but **they are not yet implemented by all browsers and frameworks.**
+  - Because the notion of same site includes sub-domains, they also provide little 
+    protection against **<ins>sub-domain hijacking attacks.</ins> The protection against 
+    CSRF is as strong as the weakest sub-domain of your site: if even a single sub-domain
+    is compromised, then all protection lost.**
+  - **SameSite cookies - incompatible with CORS.** If a cookie is marked as SameSite then 
+    it will not be sent on cross-origin requests regardless of any CORS policy and the
+    Access-Control-Allow-Credentials header will be ignored. An exception is made for 
+    origins that are sub-domains of the same site, for example www.example.com can still
+    send requests to api.example.com, but genuine cross-site requests are disallowed. **If 
+    you need to allow cross-site requests with cookies, then you should not use SameSite 
+    cookies.**
 
 ### 2) Hash-based double-submit cookies (CSRF token) (the best way):
 Эффективным и общепринятым на сегодня способом защиты от CSRF-Атаки является токен. 

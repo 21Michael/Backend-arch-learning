@@ -4,7 +4,7 @@ Learning backend architecture, security, optimization, NodeJS...
 ## 1) Computer Networks:
   - **Networks;**  ✅
   - **Protocols stack:**
-    - **ISO (layers):**
+    - **OSI (layers):**
       - `1. Application:`
           - HTTP:
             1. Messages; ✅
@@ -17,13 +17,13 @@ Learning backend architecture, security, optimization, NodeJS...
           - SMTP; ✅
           - DNS; ✅
           - NFS; ✅
-          - SSH; ✅
           - WebSocket;
           - ...
       - `2. Presentation:` ✅
           - ASCII; ✅
           - MIDI; ✅
-          - SSL; ✅
+          - SSH; ✅
+          - SSL / TLS; ✅
           - JPEG
           - ...
       - `3. Session:` ✅
@@ -64,25 +64,24 @@ Learning backend architecture, security, optimization, NodeJS...
           - Basic HTTP Authentication; ✅
           - Token based Authentication (Bearer token):
             - Access token (session-id); ✅
-            - Self-contained token (JWT);  -------------------------------
+            - Self-contained token (JWT / JOSE);  ✅
           - Open ID Connect Authentication (OAuth 2.0); ✅
         - Authorization:
           - SSO; ✅
-          - Delegated authorization (OAuth 2.0) + PKCE:  ✅
+          - Delegated authorization (OAuth 2.0) + PKCE;  ✅
       - <ins>Backup and recovery optimization;
       - <ins>Data masking;
       - <ins>Cryptography:</ins>
-        - Symmetric Encryption Methods; -------------------------------
-        - Asymmetric Encryption Methods;  -------------------------------
-        - Hashing Methods;  -------------------------------
+        - Symmetric Encryption Methods; ✅
+        - Asymmetric Encryption Methods; ✅
+        - Hashing Functions; ✅
       - ...
     - **Network security:**
       -  <ins>Firewalls; 
       -  <ins>Load-balancers;
       -  <ins>Reverse proxies;
-      -  <ins>SOP/CORS;</ins> -------------------------------
-      -  <ins>SSL/HTTPS;</ins> -------------------------------
-      -  <ins>Designing ACL;</ins> -------------------------------
+      -  <ins>SOP / CORS;</ins> ✅
+      -  <ins>Designing ACL;</ins>
       -  ...
     - **Application security:**
       -  <ins>Coding techniques;
@@ -106,9 +105,9 @@ Learning backend architecture, security, optimization, NodeJS...
       - **JS:**     
         - <ins>XSS;</ins> ✅
     - **Spoofing or tampering token:** 
-      - **Session token fixation;**  ✅
-      - **Injected DB (hashing access token);**  -------------------------------
-      - **Injected client + interception (HMAC signature);**  -------------------------------
+      - **Session token fixation;** ✅
+      - **Injected DB (hashing access token);** ✅
+      - **Injected client + interception (MAC / HMAC signature);** ✅
     - **CSRF;** ✅
     - **DDoS;** ✅
     - **Brute force attack;** ✅
@@ -184,11 +183,11 @@ Learning backend architecture, security, optimization, NodeJS...
   - ### Hexagonal architecture pattern;
   - ### Client-Server Architecture pattern;
   - ### Master-Slave Architecture pattern;
-  - ### Serverless architecture pattern;
+  - ### Serverless architecture pattern:
+    - **SaaS;**
+    - **FaaS;**
 ### 3.6) Other:
   - **Heartbeat/Health check;**
-  - **SaaS;**
-  - **FaaS;**
   - **Long-Pooling;**
   - **Swagger;**
 
@@ -198,9 +197,24 @@ Learning backend architecture, security, optimization, NodeJS...
       - routing;
       - middleware;
   - **Engine mechanisms:**
-    - **Garbage collector;**
+    - **NodeJS:**
+      - **Engine V8:** ✅
+        - **Execution context:**
+          - Global execution context; ✅
+          - Functional execution context; ✅
+          - Lexical environment; ✅
+        - **Execution Stack + Heap;** ✅
+          - JS memory model; ✅
+        - **Execution process (https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/6)%20Optimization%20techniques/Language-specific%20optimizations/JIT/JIT.md):** ✅
+          - Parser; ✅
+          - Interpreter; ✅
+          - JIT Compiler; ✅
+        - **Garbage collector;** ✅
+      - **libuv:**
+        - Asynchronicity / Event Loop;
+        - Thread pool;
+      - **Execution flow;** ✅
     - **Streams;**
-    - **Asynchronicity / Event Loop;**
     - **Node's event system;**
   - **Embedded functionality:**
     - **RELP;**
