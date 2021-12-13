@@ -54,7 +54,14 @@ Learning backend architecture, security, optimization, NodeJS...
       - `4. Network Interface:`
   - **Cookie / Session / LocalStorage;**
   - **VPN;**
-
+  - **Communication paradigms:** ✅
+    - `Messages:`
+      - types; ✅
+      - exchange types; ✅
+    - `Request-Response;` ✅
+    - `Publisher-Subscriber;`
+    - `Message queue (async communication);` ✅
+  
 ## 2) Security:
   - **API security:**
     - **Information security:**
@@ -132,8 +139,12 @@ Learning backend architecture, security, optimization, NodeJS...
 ### 3.3) Code organization:
   - **Code separation;**
   - **File naming;**
-  - **Modules:**
-    - Circular dependencies;
+  - **Modularity:** 
+    - _modularity: ✅
+      - сцепленность (cohesion) / связанность (coupling); ✅
+    - Singleton dependencies; ✅
+    - Dependency injection; ✅
+    - Circular dependencies; ✅
   
 ### 3.4) System Architectural patterns:
   - **Model-View-Controller (MVC);**
@@ -216,13 +227,13 @@ Learning backend architecture, security, optimization, NodeJS...
       - **Execution flow;** ✅
     - **Streams;**
     - **Node's event system;**
+    - **Modularity (Require Process);**  ✅
   - **Embedded functionality:**
     - **RELP;**
     - **Streams API;**
     - **Events:**
       - **Event-driven development;**
       - **Ability to write custom events;**
-    - **Require Process;**
 
 ## 5) Database:
 **Link:** https://github.com/21Michael/SQL-Study-Project
