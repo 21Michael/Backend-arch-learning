@@ -14,7 +14,7 @@
   - ### Application layer attacks: 
     **The goal** of these attacks is to exhaust the target’s resources to create a 
     denial-of-service.  
-    --  
+    __   
     **HTTP flood:** The attacks target the layer where web pages are generated on the server and 
     delivered in response to HTTP requests. A single HTTP request is computationally
     cheap to execute on the client side, but it can be expensive for the target server
@@ -27,10 +27,10 @@
     Protocol attacks, also known as a state-exhaustion attacks, cause a service 
     disruption by over-consuming server resources and/or the resources of network 
     equipment like firewalls and load balancers.  
-    --  
+    __   
     Protocol attacks utilize weaknesses in layer 3 and layer 4 (TCP/UDP) of the protocol
     stack to render the target inaccessible.   
-    --  
+    __   
     **Example (SYN flood):**  
     The worker receives a request, goes and gets the package, and waits for confirmation
     before bringing the package out front. The worker then gets many more package 
@@ -48,7 +48,7 @@
     bandwidth between the target and the larger Internet. Large amounts of data are sent
     to a target by using a form of amplification or another means of creating massive 
     traffic, such as requests from a botnet.  
-    --  
+    __   
     **Example (DNS Amplification):**
     A DNS amplification is like if someone were to call a restaurant and say “I’ll have
     one of everything, please call me back and repeat my whole order,” where the 
@@ -92,7 +92,7 @@
     By filtering requests based on a series of rules used to identify DDoS tools, 
     layer 7 attacks can be impeded. One key value of an effective WAF is the ability
     to quickly implement custom rules in response to an attack.   
-    --  
+    __   
     **WAF list:**  
     - **Blocklist**
     - **Allowlist**

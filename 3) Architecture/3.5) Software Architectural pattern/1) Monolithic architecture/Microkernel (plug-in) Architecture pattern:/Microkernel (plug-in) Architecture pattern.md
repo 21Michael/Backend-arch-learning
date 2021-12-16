@@ -17,10 +17,10 @@ providing extensibility as well as feature separation and isolation.**
     From a business-application perspective, the core system is often defined as the general 
     business logic sans custom code for special cases, special rules, or complex conditional 
     processing.  
-    --  
+    __   
     The core system needs to know about which plug-in modules are available and how to get to
     them. One common way of implementing this is through some sort of **plug-in registry.**    
-    --  
+    __   
     **Registry contains information about each plug-in module, including:**
       - name;
       - data contract (input data and output data);

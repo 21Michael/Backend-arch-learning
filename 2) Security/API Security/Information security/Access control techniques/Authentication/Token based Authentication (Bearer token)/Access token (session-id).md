@@ -10,7 +10,7 @@ what s/he can do. This extra work often requires a database lookup.
   - **<ins>Cookie (most common used)</ins>** - transport mechanism that transports small piece 
     of data that a server sends to the user's web browser. The browser may store it 
     and send it back with later requests to the same server.                 
-    --  
+    __ 
     **<ins>Pros:**</ins> managed automatically by browser, easy to Implement, has many customizations,
     fast.  
     **<ins>Const:**</ins> exposed to CSRF attacks, SameSite protection incompatible 
@@ -21,7 +21,7 @@ what s/he can do. This extra work often requires a database lookup.
     DB and sent it to user inside Authorization header, save it on client side 
     (local-storage/session-storage (auth token has to be created for each new 
     tabs)/indexedDB) and add it to each request.  
-    --  
+    __   
     **<ins>Pros:**</ins> doesn't have vulnerabilities related to cookie;  
     **<ins>Const:**</ins> XSS attacks for client side, SQL injections for server side, expensive 
     calculations (every request extracts token and user from DB);

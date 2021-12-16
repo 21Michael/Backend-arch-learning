@@ -257,6 +257,7 @@ Available memory is divided into two equal-size regions called “old-space” a
     обманывают сборщик. **Так можно делать, но я вам не советую, потому что это приведет почти 
     всегда к нежелательным эффектам.** Если создавать долгоживущий мусор, сборщик начнет считать, 
     что его не требуется собирать.  
+    __  
     **Классический пример обмана — LRU-cache.** В кэше долго лежит объект, сборщик смотрит на него
     и считает, что пока собирать не будет, потому что объект проживет еще очень долго. Потом в кэш
     попадает новый объект, а большой старый из него выталкивается и собрать этот большой объект 
@@ -279,13 +280,13 @@ Available memory is divided into two equal-size regions called “old-space” a
   - ### Immutable objects:
     **Immutable objects** can be quite beneficial to optimizing GarbageCollected code. Because an 
     ImmutableObject cannot be modified, there are many garantees which can be made. 
-      - For example, you can't have circular references, and you don't have to worry about 
+      - **Pros (increase speed):** For example, you can't have circular references, and you don't have to worry about 
         modification under the GC's nose so it's easier to just use a **mark-and-sweep** based 
         GC. **Because every time when you run mark-and-sweep GC under the mutated object the 
         algorithm has to re-update all marks tree.**
         ![link](https://drive.google.com/uc?id=11vXZ5MOeRNf4lIWO0Ifa-jL9JEBhyUxA)
         
-      - Also, one of downsides of Immutable objects is that it can fast overfill your heap memory
+      - **Cons (overflowing eden memory and triggers GC):** also, one of downsides of Immutable objects is that it can fast overfill your heap memory
         (create immutable objects in the loop), and overfilling of the heap is one of things that
         triggers GC running;
     
@@ -295,7 +296,7 @@ Available memory is divided into two equal-size regions called “old-space” a
     В современных компьютерах не один поток выполнения. В вебе это знакомо по Web Workers. 
     Почему-бы не взять и не распараллелить процесс сборки. Произвести несколько маленьких
     операций одновременно будет быстрее, чем одну большую.    
-    --  
+    
     **Heap memory allocation Generation collecting:**  
     ![link](https://v8.dev/_img/orinoco-parallel-scavenger/parallel-scavenge.png)  
     
@@ -306,7 +307,7 @@ Available memory is divided into two equal-size regions called “old-space” a
   - ### Incremental:  
     Incremental optimizations are focused on chunking the GC to small bits. This allows constant
     memory cleanup while keeping the GC chunks very short.  
-    --  
+    __  
     **Heap memory allocation Generation collecting:**  
     ![link](https://v8.dev/_img/orinoco-parallel-scavenger/parallel-scavenge.png)  
 
@@ -319,6 +320,6 @@ Available memory is divided into two equal-size regions called “old-space” a
     Optimizations that revolve around running some of the Garbage Collection algorithm along the 
     JavaScript code running in the main thread. We cannot really clear the memory while JavaScript
     is running, but we can start marking objects for removal.  
-                    --  
+    __   
     **Multi threads Generation collecting:**  
     ![link](https://habrastorage.org/r/w1560/webt/lm/fd/3w/lmfd3w2kiyhtxlwvp1wtlges6ia.png)

@@ -23,7 +23,7 @@ singleton.
 
 **There are two reasons for this:**
   - **Node’s module caching mechanism is case-sensitive;**  
-        --  
+        __   
     **<ins>For example:</ins>** require(‘./foo’) and require(‘./FOO’) return two different objects, 
     irrespective of whether or not ./foo and ./FOO are the same file.
     ```js
@@ -42,10 +42,10 @@ singleton.
       */
     ```
   - **Modules are cached based on their resolved filename (NPM 2.0);**  
-         --  
+         __   
     When file is found, it is then loaded as module and also cached by using its 
     filename as **cache key.**  
-    --  
+    __   
     **<ins>For example:</ins>** Since modules may resolve to a different filename based on the 
     location of the calling module (loading from node_modules folders), it is not a 
     guarantee that require(‘foo’) will always return the exact same object, if it 

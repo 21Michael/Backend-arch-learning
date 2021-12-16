@@ -8,13 +8,13 @@ decoupled, single-purpose event processing components that asynchronously receiv
   - ### Mediator  
     The mediator topology is useful for events that have multiple steps and require some level of 
     orchestration to process the event.  
-    --  
+    __   
     **<ins>For example:</ins>** a single event to place a stock trade might require
     you to **1) first validate the trade,** then **2) check the compliance of that stock trade
     against various compliance rules**, **3) assign the trade to a broker,** **4) calculate the commission,**
     and **5) finally place the trade with that broker.** All of these steps would require some level 
     of orchestration to determine the order of the steps and which ones can be done serially and in parallel.  
-    --  
+    __   
     **<ins>There are four main types of architecture components within the mediator topology:</ins>**
       - **Event:**  
         There are two types of events within this pattern:
@@ -62,7 +62,7 @@ decoupled, single-purpose event processing components that asynchronously receiv
     fashion through a lightweight message broker (e.g., ActiveMQ, HornetQ, etc.). This topology is 
     useful when you have a relatively simple event processing flow and you do not want (or need) central
     event orchestration.  
-    --  
+    __   
     **There are two main types of architecture components within the broker topology:**
        - **Broker component:**  The broker component can be centralized or federated and
          contains all of the event channels that are used within the event flow.

@@ -7,11 +7,11 @@
     Moreover, it ensures that the message came from the stated sender. The MAC 
     value protects both a message’s data integrity and its authenticity.
     It helps to figure out any changes to the message content.  
-    --  
+    __   
     A MAC code is calculated by using a message and a secret key as inputs. 
     Anyone who has a copy of that secret key can then verify that that code 
     and message was created by someone with the same key.  
-    --  
+    __   
     **Components:**
       - **Message:** transferring data;
         ```js

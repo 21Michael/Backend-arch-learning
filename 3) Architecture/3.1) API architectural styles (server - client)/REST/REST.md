@@ -72,7 +72,7 @@
      In fact, some services are RESTful only to a degree. They have RPC style at the core, break
      down larger services into resources, and use HTTP infrastructure efficiently. But the key 
      part is using hypermedia aka HATEOAS.  
-     --   
+     __    
      **Hypermedia As The Engine Of Application State** – is one of the constraints of the REST 
      architecture. It means that with each response, a REST API provides metadata linking to all
      the related info about how to use the API. That’s what enables decoupling the client and the
@@ -84,11 +84,11 @@
 
      Most projects these days are written using level 2. **<ins>They are actually using HTTP RPC.</ins>**
      If we would like to go for the perfect RESTful API, we should consider HATEOAS.  
-     --  
+     __   
      For adding metadata to our response used  special language: **HAL — язык гипертекстовых 
      приложений. Это формат, который обеспечивает простой и согласованный способ гиперссылки 
      между ресурсами в вашем REST API**  
-     --  
+     __   
      **С HAL у вас есть несколько категорий представлений:**
 
       - **Links (Ссылки):** комбинация (URI) ссылок на всевозможные связанные действий с данными 

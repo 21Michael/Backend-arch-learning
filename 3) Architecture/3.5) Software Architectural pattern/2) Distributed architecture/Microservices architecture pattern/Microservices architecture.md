@@ -69,12 +69,12 @@ components.
     for remote access, this topology uses a **lightweight centralized message broker (e.g.,
     RabbitMQ, Kafka, Redis, etc.).** It is vitally important when looking at this topology not
     to confuse it with the service-oriented architecture pattern or consider it “SOA-Lite."   
-    --  
+    __   
     **<ins>The lightweight message broker / Event bus</ins>** found in this topology does not perform any orchestration,
     transformation, or complex routing; rather, it is just a lightweight transport to access 
     remote service components.    
     ![link](https://drive.google.com/uc?id=1xM1x0M6g9IoVLP6onZrIyV5lYYIwA7zL)
-    --  
+    __   
     The centralized messaging topology is typically found in **<ins>larger business applications</ins>** or
     applications requiring more sophisticated control over the transport layer between the user
     interface and the service components. The benefits of this topology over the simple
