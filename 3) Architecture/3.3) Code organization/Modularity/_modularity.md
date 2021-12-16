@@ -51,26 +51,58 @@ The reusable components must:
   - It must perform a single function.
   - Have few and clear connections to other components in the systems.
 
-## Сцепленность (cohesion) и связанность (coupling):
+# Modularity notions:
+
+## 1) Сцепленность (cohesion) и связанность (coupling):
 ![link](https://programmerbay.com/wp-content/uploads/2020/05/cohesion-vs-coupling.png)
 
 ### Сцепленность (cohesion): 
-мера корреляции функций компонента между собой.
+Мера корреляции функций компонента между собой.
 Например, модуль, предназначенный для выполнения только одного действия,
 когда все его элементы подчинены решению одной задачи, обладает высокой
-сцепленностью. Модуль, содержащий функции для сохранения объектов любо­
-го типа в базу данных, такие как saveProduct(), saveInvoice(), saveUser() и т. д.,
+сцепленностью. Модуль, содержащий функции для сохранения объектов любого 
+типа в базу данных, такие как saveProduct(), saveInvoice(), saveUser() и т. д.,
 имеет низкую сцепленность;
 
 ### Связанность (coupling): 
 мера зависимости от других компонентов системы.
-Например, модуль тесно связан с другим модулем, если непосредственно чи­
-тает или изменяет данные другого модуля. Кроме того, два модуля, взаимо­
-действующих через глобальное или общее состояние, также тесно связаны.
-С другой стороны, два модуля, взаимодействующих только через передачу па­
-раметров, слабо связаны.
+Например, модуль тесно связан с другим модулем, если непосредственно читает или 
+изменяет данные другого модуля. Кроме того, два модуля, взаимодействующих через 
+глобальное или общее состояние, также тесно связаны.
+С другой стороны, два модуля, взаимодействующих только через передачу параметров, 
+слабо связаны.
 
+### <ins>Strives for:</ins>
 **Наиболее желательна высокая сцепленность при слабой связанности, что обеспечивает 
 наглядность, возможность повторного использования и расширяемость модулей.**
 
 ![link](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/CouplingVsCohesion.svg/1024px-CouplingVsCohesion.svg.png)
+
+## 2) Fine-grained (мелкозернистый) / coarse-grained code (крупнозернистый):
+![link](https://miro.medium.com/max/1200/0*LSSyXux2975H5sdT)
+
+**Granularity** is the extent to which a system is broken down into small parts, either 
+the system itself or its description or observation. It is the extent to which a
+larger entity is subdivided. For example, a yard broken into inches has finer 
+granularity than a yard broken into feet.
+
+## Fine-grained (мелкозернистый):
+
+**Fine-grained** - smaller components of which the larger ones are composed, lower level 
+service;
+
+**Code example:**
+![link](https://drive.google.com/uc?id=10WI8_uKVDLus3cQqCTkqh7hCMJd5bUnH)
+
+## Coarse-grained (крупнозернистый):
+
+**Coarse-grained** - larger components than fine-grained, large subcomponents. Simply 
+wraps one or more fine-grained services together into a more coarse-grained operation.
+
+**Code example:**
+![link](https://drive.google.com/uc?id=12BGEVV5TaKA2byrQ9Vi4JkObT5yQA0qY)
+
+### <ins>Strives for:</ins> 
+**Move from coarse-grained code to fine-grained code limited by lvl of abstraction 
+(cohesion) established to certain project / principle / team agreement / architecture
+principle / ...;**

@@ -142,6 +142,7 @@ Learning backend architecture, security, optimization, NodeJS...
   - **Modularity:** 
     - _modularity: ✅
       - сцепленность (cohesion) / связанность (coupling); ✅
+      - fine-grained (мелкозернистый) / coarse-grained code (крупнозернистый);
     - Singleton dependencies; ✅
     - Dependency injection; ✅
     - Circular dependencies; ✅
