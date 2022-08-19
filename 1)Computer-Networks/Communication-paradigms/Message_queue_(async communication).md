@@ -64,6 +64,7 @@
     - **Competing consumers** — Does the message broker support competing consumers?  
       
     **<ins>Each message broker implements the message channel concept in a different way:</ins>**
+    
     ![link](https://drive.google.com/uc?id=1RRAZIWnzQ7LA5UIu3jQzzA6PONsX57ik)
 
     **Pros:**
@@ -132,8 +133,8 @@
     __   
     Эти компоненты управляются брокером, предоставляющим программный интерфейс для
     создания и управления ими:
+        
     ![link](https://drive.google.com/uc?id=1ZYylhNDvPEEoiHJlb2S_alv9XF0uh1zR)
         
     - ### Message Queue Telemetry Transport (MQTT):
     - ### Simple/Streaming Text Orientated Messaging Protocol (STOMP) : 
-    

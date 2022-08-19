@@ -148,7 +148,7 @@ could cascade to the client’s clients and so on and cause an outage.
   - **<h3>API Gateway:**</h3> 
     Implement an API gateway that is the single entry point for all clients. The API gateway 
     handles requests in one of two ways. Some requests are simply proxied/routed to the 
-    appropriate service. It handles other requests by fanning out to multiple services.
+    appropriate service. It handles other requests by fanning out to multiple services.  
     ![link](https://microservices.io/i/apigateway.jpg)
     
     **Functions:**

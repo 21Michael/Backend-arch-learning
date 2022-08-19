@@ -2,10 +2,7 @@
 **Single sign-on (SSO)** is an authentication method that enables users to securely 
 authenticate with multiple applications and websites by using just one set of credentials.
 
-![link](https://itsecforu.ru/wp-content/uploads/2019/06/sso.png)
-
-## WorkFlow:
-![link](https://www.onelogin.com/assets/img/learn/sso-workflow.png)
+[![](../../../../../images/sso.png)](../../../../../images/sso.png)
 
 ## Types of SSO:
   - **Federated Identity Management (FIM);**  
@@ -22,5 +19,3 @@ authenticate with multiple applications and websites by using just one set of cr
     Is an authentication layer that was built on top of OAuth 2.0 to provide Single Sign-on functionality.
   - **Security Access Markup Language (SAML);**  
     Is an open standard that is also designed to provide Single Sign-on functionality.
-    
-![link](https://www.onelogin.com/assets/img/learn/sso-types.png)

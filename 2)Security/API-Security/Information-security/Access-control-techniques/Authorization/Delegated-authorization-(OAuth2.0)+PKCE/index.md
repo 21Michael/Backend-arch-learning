@@ -15,10 +15,10 @@ granting access to data and features from one application to another.
     application typically consists of both a browser part and a server part. If a 
     web application needs access to a resource server (e.g. to Facebook user accounts),
     then the client password could be stored on the server. The password would thus 
-    be confidential.  
+    be confidential.   
     ![link](http://tutorials.jenkov.com/images/oauth2/overview-client-types-1.png)
     
-    **Authorization by <ins>client-secret-key</ins> throughout the <ins>back channel</ins>:**
+    **Authorization by <ins>client-secret-key</ins> throughout the <ins>back channel</ins>:**  
     ![link](https://drive.google.com/uc?id=1Af7YY0gx1PlMPccuChoq561xA17uhGFT)
     
   - ### Public client: User Agent Application (PKCE auth)
@@ -26,17 +26,17 @@ granting access to data and features from one application to another.
     browser. The browser is the user agent. A user agent application may be stored 
     on a web server, but the application is only running in the user agent once
     downloaded. An example could be a little JavaScript game that only runs in the
-    browser.  
+    browser.   
     ![link](http://tutorials.jenkov.com/images/oauth2/overview-client-types-2.png)
     
   - ### Public client: Native Application (PKCE auth)
     A native application is for instance a desktop application or a mobile phone 
     application. Native applications are typically installed on the users computer
     or device (phone, tablet etc.). Thus, the client password will be stored on the
-    users computer or device too.
+    users computer or device too.  
     ![link](http://tutorials.jenkov.com/images/oauth2/overview-client-types-3.png)
     
-    **Authorization without <ins>PKCE</ins> throughout the <ins>front channel</ins>:**
+    **Authorization without <ins>PKCE</ins> throughout the <ins>front channel</ins>:**  
     ![link](https://drive.google.com/uc?id=1bUEfTM5HjQPGRNTCVutTYv7QRZULvvZc)
    
     **Authorization by <ins>PKCE</ins> throughout the <ins>front channel</ins>:**

@@ -62,7 +62,9 @@ ensures that all data passed between them remain private and free from attack.
     нешифрованном виде к передаче зашифрованных данных.
     Состоит из единственного сообщения, которое содержит 1 байт со значением 1, которое 
     отправляется и клиентом и сервером на стадии рукопожатия.
+    
     ![link](https://player.slideplayer.com/38/10784279/data/images/img44.jpg)
+    
   - ### Alert protocol
     This protocol is used to convey SSL-related alerts to the peer entity. Each message 
     in this protocol contain 2 bytes.  
@@ -96,5 +98,5 @@ ensures that all data passed between them remain private and free from attack.
     SSL message authentication adjoins the key details and application data in ad-hoc 
     way while TLS version relies on HMAC Hash-based Message Authentication Code.
     
-## Scheme:
+## Scheme:  
 ![link](https://drive.google.com/uc?id=1BJ9nwQm4K9qWvJ_MJaBTFPBohBLFcU0T)

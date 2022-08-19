@@ -14,7 +14,7 @@ in some cases, to block the JavaScript Event Loop.
 - **Linked objects:**
 
 ## <ins>Reachability concept:</ins>
-![link](https://drive.google.com/uc?id=1nUimAH_1-isjbHxnRNrAbvPvW7KRHHLq)
+![link](https://drive.google.com/uc?id=1nUimAH_1-isjbHxnRNrAbvPvW7KRHHLq)  
 - **One link:**  
   **<ins>Example:</ins>**
   ```js
@@ -22,13 +22,13 @@ in some cases, to block the JavaScript Event Loop.
     name: "John"
   };
   ```
-  ![link](https://drive.google.com/uc?id=16X1C9YHWnCiYmho-59AAiE3VI5hVL7jv)
+  ![link](https://drive.google.com/uc?id=16X1C9YHWnCiYmho-59AAiE3VI5hVL7jv)  
 
   **<ins>GC processing:</ins>**
   ```js
   user = null;
   ```
-  ![link](https://drive.google.com/uc?id=1TXJq-t6qMoc5ZzELB2jhdULfx-zjZedZ)
+  ![link](https://drive.google.com/uc?id=1TXJq-t6qMoc5ZzELB2jhdULfx-zjZedZ)  
 
 - **Two links:**  
   **<ins>Example:</ins>**
@@ -39,7 +39,7 @@ in some cases, to block the JavaScript Event Loop.
   
   let admin = user;
   ```
-  ![link](https://drive.google.com/uc?id=1NEOYZSVdMfuWWoxNQrFTx7b6BvVAPhtI)
+  ![link](https://drive.google.com/uc?id=1NEOYZSVdMfuWWoxNQrFTx7b6BvVAPhtI)  
 
   **<ins>GC processing:</ins>**
    ```js
@@ -67,14 +67,14 @@ in some cases, to block the JavaScript Event Loop.
       name: "Ann"
   });
   ```
-  ![link](https://drive.google.com/uc?id=1o1YPHDHEPvBGlEoY_xQvgLy69UAqmZiM)
+  ![link](https://drive.google.com/uc?id=1o1YPHDHEPvBGlEoY_xQvgLy69UAqmZiM)  
 
   **<ins>GC processing:</ins>**
    ```js
   delete family.father;
   delete family.mother.husband;
   ```
-  ![link](https://drive.google.com/uc?id=1f5Zfi22RpuOFycojAIwalEkhLy6GvCiS)
+  ![link](https://drive.google.com/uc?id=1f5Zfi22RpuOFycojAIwalEkhLy6GvCiS)  
   Исходящие ссылки не имеют значения. Только входящие ссылки могут сделать объект достижимым. Объект John
   теперь недостижим и будет удалён из памяти со всеми своими данными, которые также стали недоступны.
 
@@ -97,13 +97,13 @@ in some cases, to block the JavaScript Event Loop.
       name: "Ann"
   });
   ```
-  ![link](https://drive.google.com/uc?id=1o1YPHDHEPvBGlEoY_xQvgLy69UAqmZiM)
+  ![link](https://drive.google.com/uc?id=1o1YPHDHEPvBGlEoY_xQvgLy69UAqmZiM)  
 
   **<ins>GC processing:</ins>**
    ```js
   family = null;
   ```
-  ![link](https://drive.google.com/uc?id=1tH4rvaa4KEbuvU27MUSmISJaA8c82f6n)
+  ![link](https://drive.google.com/uc?id=1tH4rvaa4KEbuvU27MUSmISJaA8c82f6n)  
   Этот пример демонстрирует, насколько важна концепция достижимости. Объекты John и Ann всё ещё связаны, оба
   имеют входящие ссылки, но этого недостаточно. У объекта family больше нет ссылки от корня (stack memory), поэтому весь
   «остров» становится недостижимым и будет удалён.
@@ -113,10 +113,11 @@ in some cases, to block the JavaScript Event Loop.
 GC заботится только об аллокации новой памяти, а на умные стратегии сборки мусора можно забить.
 Как только доступная куча заканчивается, начинается процедура остановки сервера.
 **<ins>Memory allocation (fragmentation):</ins>**
-  1) **Memory overfilling:**
-     ![link](https://habrastorage.org/r/w1560/webt/rg/ly/oy/rglyoyk5kjjz0re9ktp1m7r0dtg.png)
-  2) **No GC everything stops:**
-    ![link](https://habrastorage.org/r/w1560/webt/un/lw/gn/unlwgnwcw1-7p5xunjhvo2hfwzg.png)
+  1) **Memory overfilling:**  
+     ![link](https://habrastorage.org/r/w1560/webt/rg/ly/oy/rglyoyk5kjjz0re9ktp1m7r0dtg.png)  
+     
+  2) **No GC everything stops:**  
+    ![link](https://habrastorage.org/r/w1560/webt/un/lw/gn/unlwgnwcw1-7p5xunjhvo2hfwzg.png)  
 
 **<ins>Conclusion:</ins>**  
 Для фронтенда no-op collector неактуален, но на бэкенде используется. Например, имея несколько 
@@ -141,27 +142,27 @@ GC заботится только об аллокации новой памят
   - Все непомеченные объекты удаляются.
   
 **<ins>Example:</ins>**  
-![link](https://drive.google.com/uc?id=1PSt9c4FKDTixjLHH4JXtHqv76tkXt5PM)
+![link](https://drive.google.com/uc?id=1PSt9c4FKDTixjLHH4JXtHqv76tkXt5PM)  
 
-![link](https://drive.google.com/uc?id=1sWCHJlJGckbxwCVLlF9kufxg53P53ZcN)
+![link](https://drive.google.com/uc?id=1sWCHJlJGckbxwCVLlF9kufxg53P53ZcN)  
 
 **<ins>Memory allocation (fragmentation):</ins>**  
   1) **Memory overfilling:**  
-     ![link](https://habrastorage.org/r/w1560/webt/rg/ly/oy/rglyoyk5kjjz0re9ktp1m7r0dtg.png)
+     ![link](https://habrastorage.org/r/w1560/webt/rg/ly/oy/rglyoyk5kjjz0re9ktp1m7r0dtg.png)  
   2) **Memory after GC (fragmentation):**  
      **Фрагментация памяти** — это когда большая часть вашей памяти выделяется в большом количестве
      несмежных блоков или блоков — оставляя значительный процент вашей общей памяти 
      нераспределенной, но непригодной для большинства типичных сценариев. Это приводит к 
      исключениям нехватки памяти или ошибкам выделения.
-     ![link](https://drive.google.com/uc?id=1FpbOW9OmaqOgwW2yVLDCvSgWPEiyQOuE)
+     ![link](https://drive.google.com/uc?id=1FpbOW9OmaqOgwW2yVLDCvSgWPEiyQOuE)  
      
 **<ins>Conclusion:</ins>**
-  - **Pros:**
+  - **Pros:**  
     - Очень простой алгоритм. Один из первых, про который вы узнаете, если начнете изучать Garbage
       collector.
     - Работает пропорционально количеству мусора, но справляется только, когда мусора мало.
     - Если у вас только живые объекты, то он не тратит время и просто ничего не делает.
-  - **Cons:**
+  - **Cons:**  
     - Требует сложной логики поиска свободного места, потому что когда в памяти много дырок, то в 
       каждую приходится примерять объект, чтобы понять — подходит он или нет.
     - Фрагментирует память. Может произойти ситуация, что при свободных 200 Мб память разбита на 
@@ -174,18 +175,18 @@ GC заботится только об аллокации новой памят
 
 **<ins>Memory allocation (fragmentation):</ins>**
   1) **Memory overfilling:**   
-   ![link](https://habrastorage.org/r/w1560/webt/rg/ly/oy/rglyoyk5kjjz0re9ktp1m7r0dtg.png)
+   ![link](https://habrastorage.org/r/w1560/webt/rg/ly/oy/rglyoyk5kjjz0re9ktp1m7r0dtg.png)  
   2) **Memory after GC (defragmentation):**  
      **Дефрагментация (уплотнение) памяти** - объединение свободных блоков, перемещение программ в начало памяти и
      объединение свободных областей. На время уплотнения вычисления приостанавливаются.
-     ![link](https://drive.google.com/uc?id=1UchRyM7lpTodwq8pPZG-pz6816YNAAs8)
+     ![link](https://drive.google.com/uc?id=1UchRyM7lpTodwq8pPZG-pz6816YNAAs8)  
 
 **<ins>Conclusion:</ins>**
-  - **Pros:**
+  - **Pros:**  
     - Дефрагментирует память.
     - Работает пропорционально количеству живых объектов, а значит, можно использовать, когда
       мусора практически нет.
-  - **Cons:**
+  - **Cons:**  
     - Сложный в работе и реализации.
     - Перемещает объекты. Мы подвинули объект, скопировали, теперь он находится в другом месте 
       и вся эта операция довольно дорогая.
@@ -197,12 +198,12 @@ objects are relocated from one address to another during a collection.
 Available memory is divided into two equal-size regions called “old-space” and “new-space”.
 
 **<ins>Memory allocation (fragmentation):</ins>**
-  1) **Memory overfilling:**
-     ![link](https://drive.google.com/uc?id=1NCWoMOseuObwrGXSW1FA2DThMPQ4HIlj)
-  2) **Computing GC (starting relocation defragmentation):**
-     ![link](https://drive.google.com/uc?id=1Stcz7xuZaauu1-1wLZCqmKqrOgE_EVPW)
-  2) **Memory after GC (relocation defragmentation completed):**
-     ![link](https://drive.google.com/uc?id=1R_iBCJIOSskZRiRrhTG66uLuv1UH2ugW)
+  1) **Memory overfilling:**  
+     ![link](https://drive.google.com/uc?id=1NCWoMOseuObwrGXSW1FA2DThMPQ4HIlj)  
+  2) **Computing GC (starting relocation defragmentation):**  
+     ![link](https://drive.google.com/uc?id=1Stcz7xuZaauu1-1wLZCqmKqrOgE_EVPW)  
+  2) **Memory after GC (relocation defragmentation completed):**  
+     ![link](https://drive.google.com/uc?id=1R_iBCJIOSskZRiRrhTG66uLuv1UH2ugW)  
      
 **<ins>Conclusion:</ins>**
   - **Pros:**
@@ -216,21 +217,21 @@ Available memory is divided into two equal-size regions called “old-space” a
     - Двойной расход памяти. Вы используете памяти в 2 раза больше, чем надо.
     - Перемещает объекты — это тоже не очень дешевая операция.
 
-### CONCLUSION:
-![link](https://habrastorage.org/r/w1560/webt/s9/zm/ec/s9zmecoite95yruxuvtafbzaimy.png)
+### CONCLUSION:  
+![link](https://habrastorage.org/r/w1560/webt/s9/zm/ec/s9zmecoite95yruxuvtafbzaimy.png)  
 
 ## <ins>V8 GC processing (generation collecting):</ins>
-**Heap:**
-  - **Eden Space** — в этой области выделяется память под все создаваемые программой объекты.
+### Heap:
+  - **Eden Space** (new space) — в этой области выделяется память под все создаваемые программой объекты.
     Жизненный цикл большей части объектов, к которым относятся итераторы, объекты внутри методов
     и т.п., недолгий.
-  - **Survivor Space** — здесь хранятся перемещенные из Eden Space объекты после первой сборки 
+  - **Survivor Space** (old space) — здесь хранятся перемещенные из Eden Space объекты после первой сборки 
     мусора. Объекты, пережившие несколько сборок мусора, перемещаются в следующую сборку Tenured
     Generation.
-  - **Tenured Generation** хранит долгоживущие объекты. Когда данная область памяти заполняется,
+  - **Tenured Generation** (large object space) — хранит долгоживущие объекты. Когда данная область памяти заполняется,
     выполняется полная сборка мусора (full, major collection).
     
-![link](https://overcoder.net/img/1/53/67/526603.png)
+![link](https://i.imgur.com/kSgatSL.png)
 
 ### Generation collecting (single-thread):
   1) Создается объект в Eden. 
@@ -246,7 +247,7 @@ Available memory is divided into two equal-size regions called “old-space” a
 ![link](https://v8.dev/_img/orinoco-parallel-scavenger/cheneys-semispace-copy.png)
 
 **Single thread Generation collecting:**  
-![link](https://v8.dev/_img/orinoco-parallel-scavenger/cheneys-semispace-copy-processing.png)
+![link](https://v8.dev/_img/orinoco-parallel-scavenger/cheneys-semispace-copy-processing.png)  
 ![link](https://javascriptperformance.dev/wp-content/uploads/2021/02/image-1536x272.png)
 
 ## <ins>GC optimizations:</ins>
@@ -263,7 +264,7 @@ Available memory is divided into two equal-size regions called “old-space” a
     попадает новый объект, а большой старый из него выталкивается и собрать этот большой объект 
     сразу уже нельзя.
     
-    ![link](http://www.topjavatutorial.com/wp-content/uploads/2016/04/LRU-Cache.png)
+    ![link](http://www.topjavatutorial.com/wp-content/uploads/2016/04/LRU-Cache.png)  
     
   - ### WeakRef:  
     A WeakRef object lets you hold a weak reference to another object, without preventing that
@@ -275,7 +276,7 @@ Available memory is divided into two equal-size regions called “old-space” a
     уничтожить объект и освободить его память. Если это произойдет, вы больше не сможете получить
     объект из слабой ссылки.
   - ### Pool pattern:
-    **Link:** https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/3)%20GOF%20Design%20Patterns/Creational/pool.js
+    **Link:** https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/3)GOF-Design-Patterns/Creational/pool.js
   - ### Unsubscribe from events (removeEventListener());
   - ### Immutable objects:
     **Immutable objects** can be quite beneficial to optimizing GarbageCollected code. Because an 
@@ -283,7 +284,7 @@ Available memory is divided into two equal-size regions called “old-space” a
       - **Pros (increase speed):** For example, you can't have circular references, and you don't have to worry about 
         modification under the GC's nose so it's easier to just use a **mark-and-sweep** based 
         GC. **Because every time when you run mark-and-sweep GC under the mutated object the 
-        algorithm has to re-update all marks tree.**
+        algorithm has to re-update all marks tree.**  
         ![link](https://drive.google.com/uc?id=11vXZ5MOeRNf4lIWO0Ifa-jL9JEBhyUxA)
         
       - **Cons (overflowing eden memory and triggers GC):** also, one of downsides of Immutable objects is that it can fast overfill your heap memory
@@ -301,7 +302,7 @@ Available memory is divided into two equal-size regions called “old-space” a
     ![link](https://v8.dev/_img/orinoco-parallel-scavenger/parallel-scavenge.png)  
     
     **Multi threads Generation collecting:**  
-    ![link](https://v8.dev/_img/orinoco-parallel-scavenger/parallel-scavenge-processing.png)    
+    ![link](https://v8.dev/_img/orinoco-parallel-scavenger/parallel-scavenge-processing.png)      
     ![link](https://javascriptperformance.dev/wp-content/uploads/2021/02/image-1-1536x925.png)  
     
   - ### Incremental:  
@@ -312,7 +313,7 @@ Available memory is divided into two equal-size regions called “old-space” a
     ![link](https://v8.dev/_img/orinoco-parallel-scavenger/parallel-scavenge.png)  
 
     **Multi threads Generation collecting:**  
-    ![link](https://v8.dev/_img/orinoco-parallel-scavenger/parallel-scavenge-processing.png)    
+    ![link](https://v8.dev/_img/orinoco-parallel-scavenger/parallel-scavenge-processing.png)     
     ![link](https://javascriptperformance.dev/wp-content/uploads/2021/02/image-2-1536x1267.png)  
     
   - ### Concurrent:

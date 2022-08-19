@@ -72,14 +72,37 @@ transaction and begin the **rollback process.**
     when each transaction requests a lock on a resource the other requires.
     
     
-### 2) <ins>SAGA pattern:</ins>
+### 2) <ins>SAGA pattern:</ins>  
+[![](../../../../../../images/From_2PC_To_Saga.png)](../../../../../../images/From_2PC_To_Saga.png)
+
 The Saga pattern is another widely used pattern for distributed transactions. It is different 
 from 2pc, which is synchronous. The Saga pattern is asynchronous and reactive. In a Saga pattern,
 the distributed transaction is fulfilled by asynchronous local transactions on all related 
 microservices. The microservices communicate with each other through an event bus.
 
-###  - **Choreography-based saga:**  
-When using choreography, there’s no central coordinator telling the saga participants what to do. Instead,
-the saga participants subscribe to each other’s events and respond accordingly.
+**Rollback:**  
+[![](../../../../../../images/0_Kb4AlfDkw_gFSdSG.png)](../../../../../../images/0_Kb4AlfDkw_gFSdSG.png)  
 
-###  - **Orchestration-based saga (event bus):**
+###  - **Choreography-based saga:**  
+[![](../../../../../../images/Create_Order_Saga.png)](../../../../../../images/Create_Order_Saga.png)  
+When using choreography, there’s no central coordinator telling the saga participants what to do. Instead,
+the saga participants subscribe to each other’s events and respond accordingly.  
+**An e-commerce application that uses this approach would create an order using a choreography-based saga 
+that consists of the following steps:**
+  1. The Order Service receives the POST /orders request and creates an Order in a PENDING state; 
+  2. It then emits an Order Created event;
+  3. The Customer Service’s event handler attempts to reserve credit;
+  4. It then emits an event indicating the outcome;
+  5. The OrderService’s event handler either approves or rejects the Order;
+
+###  - **Orchestration-based saga (event bus):**  
+[![](../../../../../../images/Create_Order_Saga_Orchestration.png)](../../../../../../images/Create_Order_Saga_Orchestration.png)
+
+**An e-commerce application that uses this approach would create an order using an orchestration-based saga
+that consists of the following steps:**  
+  1. The Order Service receives the POST /orders request and creates the Create Order saga orchestrator;
+  2. The saga orchestrator creates an Order in the PENDING state;
+  3. It then sends a Reserve Credit command to the Customer Service;
+  4. The Customer Service attempts to reserve credit;
+  5. It then sends back a reply message indicating the outcome;
+  6. The saga orchestrator either approves or rejects the Order;

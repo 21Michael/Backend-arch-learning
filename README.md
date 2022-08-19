@@ -242,28 +242,23 @@ Learning backend architecture, security, optimization, NodeJS...
   - **Swagger;**
 
 ## 4) NodeJS:
-  - **Frameworks:**
-    - **Express:**
-      - routing;
-      - middleware;
   - **Engine mechanisms:**
-    - **NodeJS:**
-      - [**Engine V8:**](4\)NodeJS/Engine-mechanisms/NodeJS/NodeJS.md)✅
-        - **Execution context:**
-          - Global execution context; ✅
-          - Functional execution context; ✅
-          - Lexical environment; ✅
-        - **Execution Stack + Heap;** ✅
-          - [JS memory model;](4\)NodeJS/Engine-mechanisms/NodeJS/JS_memory_model.md) ✅
-        - **Execution process (https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/6)%20Optimization%20techniques/Language-specific%20optimizations/JIT/JIT.md):** ✅
-          - Parser; ✅
-          - Interpreter; ✅
-          - JIT Compiler; ✅
-        - [**Garbage collector;**](4\)NodeJS/Engine-mechanisms/NodeJS/Garbage_collector.md)✅
-      - **libuv:**
-        - Asynchronicity / Event Loop;
-        - Thread pool;
-      - **Execution flow;** ✅
+    - [**Engine V8:**](4\)NodeJS/Engine-mechanisms/NodeJS/NodeJS.md)✅
+      - **Execution context:**
+        - Global execution context; ✅
+        - Functional execution context; ✅
+        - Lexical environment; ✅
+      - **Execution Stack + Heap;** ✅
+        - [JS memory model;](4\)NodeJS/Engine-mechanisms/NodeJS/JS_memory_model.md) ✅
+      - **Execution process (https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/6)%20Optimization%20techniques/Language-specific%20optimizations/JIT/JIT.md):** ✅
+        - Parser; ✅
+        - Interpreter; ✅
+        - JIT Compiler; ✅
+      - [**Garbage collector;**](4\)NodeJS/Engine-mechanisms/NodeJS/Garbage_collector.md)✅
+    - **libuv:**
+      - Asynchronicity / Event Loop;
+      - Thread pool;
+    - **Execution flow;** ✅
     - **Streams;**
     - **Node's event system;**
     - [**Modularity (Require Process);**](4\)NodeJS/Engine-mechanisms/Modularity_(Require_Process).md) ✅
