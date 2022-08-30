@@ -242,37 +242,27 @@ Learning backend architecture, security, optimization, NodeJS...
   - **Swagger;**
 
 ## 4) NodeJS:
-  - **Engine mechanisms:**
-    - [**Engine V8:**](4\)NodeJS/Engine-mechanisms/NodeJS/NodeJS.md)✅
-      - **Execution context:**
-        - Global execution context; ✅
-        - Functional execution context; ✅
-        - Lexical environment; ✅
-      - **Execution Stack + Heap;** ✅
-        - [JS memory model;](4\)NodeJS/Engine-mechanisms/NodeJS/JS_memory_model.md) ✅
-      - **Execution process (https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/6)%20Optimization%20techniques/Language-specific%20optimizations/JIT/JIT.md):** ✅
-        - Parser; ✅
-        - Interpreter; ✅
-        - JIT Compiler; ✅
-      - [**Garbage collector;**](4\)NodeJS/Engine-mechanisms/NodeJS/Garbage_collector.md)✅
-    - **libuv:**
-      - Asynchronicity / Event Loop;
-      - Thread pool;
-    - **Execution flow;** ✅
-    - **Streams;**
-    - **Node's event system;**
-    - [**Modularity (Require Process);**](4\)NodeJS/Engine-mechanisms/Modularity_(Require_Process).md) ✅
-  - **Embedded functionality:**
+
+  - [**<ins>ENGINE V8:</ins>**](4\)NodeJS/ENGINE-V8/NodeJS.md) 
+    - [**Execution context:**](4\)NodeJS/ENGINE-V8/Execution-context/Execution_context.md)
+      - Global execution context; ✅
+      - Functional execution context; ✅
+      - Lexical environment; ✅
+    - [**Execution Stack + Heap:**](4\)NodeJS/ENGINE-V8/Execution-Stack-Heap/Execution_Stack_Heap.md) 
+      - [JS memory model;](4\)NodeJS/ENGINE-V8/Execution-Stack-Heap/JS_memory_model.md) ✅
+    - [**Execution process:**](4\)NodeJS/ENGINE-V8/Execution-process/Execution_process.md) 
+      - Parser; ✅
+      - Interpreter; ✅
+      - JIT Compiler; ✅
+    - [**Garbage collector;**](4\)NodeJS/ENGINE-V8/Garbage-collector/Garbage_collector.md)
+  - **<ins>LIBUV</ins>:**
+    - [Asynchronicity / Event Loop;](4\)NodeJS/Engine-mechanisms/NodeJS/Asynchronicity_Event Loop.md)
+    - Thread pool;
+  - **<ins>EMBEDDED FUNCTIONALITY:</ins>**
     - **RELP;**
-    - **Streams API;**
-    - **Events:**
+    - **Streams;**
+    - **Node's event system:**
       - **Event-driven development;**
       - **Ability to write custom events;**
+    - [**Modularity (Require Process);**](4\)NodeJS/Engine-mechanisms/Modularity_(Require_Process).md) ✅
 
-## 5) Database:
-**Link:** https://github.com/21Michael/SQL-Study-Project
-
-## 6) AWS
-
-- ETL
-- SSR

@@ -51,6 +51,7 @@ components.
     modules that perform specific business functions independent from the rest of the services. 
     In this topology, these fine-grained service components are typically accessed using a 
     REST-based interface implemented through a separately deployed web-based API layer.
+    
     ![link](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/assets/sapr_0402.png)
     
   - ### Application REST-based topology:
@@ -63,6 +64,7 @@ components.
     service components tend to be larger, more coarse-grained, and represent a small portion of
     the overall business application rather than fine-grained, single-action services. 
     This topology is common for **small to medium-sized** business applications that have a relatively low degree of complexity.
+    
     ![link](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/assets/sapr_0403.png)
     
   - ### Centralized messaging topology:
@@ -74,6 +76,7 @@ components.
     **<ins>The lightweight message broker / Event bus</ins>** found in this topology does not perform any orchestration,
     transformation, or complex routing; rather, it is just a lightweight transport to access 
     remote service components.    
+    
     ![link](https://drive.google.com/uc?id=1xM1x0M6g9IoVLP6onZrIyV5lYYIwA7zL)
     __   
     The centralized messaging topology is typically found in **<ins>larger business applications</ins>** or
@@ -85,6 +88,7 @@ components.
     centralized broker are addressed through broker clustering and broker federation (splitting
     a single broker instance into multiple broker instances to divide the message throughput 
     load based on functional areas of the system).
+    
     ![link](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/assets/sapr_0404.png)
 
 ## Microservices pattern potholes:
@@ -111,6 +115,7 @@ components.
           If you find you need to perform **inter-service communication between service components**
           to process a single request, chances are your service components are either too fine-grained
           or they are not partitioned correctly from a business functionality standpoint.
+          
           ![link](https://drive.google.com/uc?id=1fBKJYzcRwPSKqoLJj3tHCXe8YoHXo8_5)
           
           Inter-service communication, which could force undesired couplings between components,
@@ -123,6 +128,7 @@ components.
           However, the tight coupling between the services will be a hindrance to deploying 
           service changes independently. The only option you have is to scale out the entire 
           monolithic database – you cannot scale an individual component.
+          
           ![link](https://drive.google.com/uc?id=1e4_Qo05VkYmOIAOb5jMI9oJKdk4TKHDI)
           
           For example, if a service component handing Internet orders needs customer information,
@@ -144,12 +150,14 @@ components.
           redundancy of repeating small portions of business logic for the sake of keeping
           service components independent and separating their deployment. Small utility
           classes might fall into this category of repeated code.
+          
           ![link](https://drive.google.com/uc?id=1REMorKjrFshdwUzaswWlqAPusiJFL4Ag)
           
     - **The solution (difficult to implement): <ins>compose coarse-grained services with 
       fine-grained operations:</ins>**  
       Using both levels of abstractions simultaneously allows architecting proper granularity
-      of services by business logic or abstraction by it's very difficult to achieve. 
+      of services by business logic or abstraction by it's very difficult to achieve.
+      
       ![link](https://i.stack.imgur.com/e9PKw.jpg)
     
 ## Microservices architecture pros:
