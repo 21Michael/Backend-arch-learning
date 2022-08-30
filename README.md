@@ -257,7 +257,7 @@ Learning backend architecture, security, optimization, NodeJS...
     - [**Garbage collector;**](4\)NodeJS/ENGINE-V8/Garbage-collector/Garbage_collector.md)
   - **<ins>LIBUV</ins>:**
     - [Asynchronicity / Event Loop;](4\)NodeJS/Engine-mechanisms/NodeJS/Asynchronicity_Event Loop.md)
-    - Thread pool;
+    - [Thread pool;](4\)NodeJS/LIBUV/Thread_pool.md) ✅
   - **<ins>EMBEDDED FUNCTIONALITY:</ins>**
     - **RELP;**
     - **Streams;**
