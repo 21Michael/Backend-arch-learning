@@ -256,7 +256,10 @@ Learning backend architecture, security, optimization, NodeJS...
       - JIT Compiler; ✅
     - [**Garbage collector;**](4\)NodeJS/ENGINE-V8/Garbage-collector/Garbage_collector.md)
   - **<ins>LIBUV</ins>:**
-    - [Asynchronicity / Event Loop;](4\)NodeJS/Engine-mechanisms/NodeJS/Asynchronicity_Event Loop.md)
+    - [Asynchronicity:](4\)NodeJS/Engine-mechanisms/NodeJS/Asynchronicity_Event Loop.md)
+      - Event Loop; ✅
+      - Multi-threads; ✅
+      - Process flow; ✅
     - [Thread pool;](4\)NodeJS/LIBUV/Thread_pool.md) ✅
   - **<ins>EMBEDDED FUNCTIONALITY:</ins>**
     - **RELP;**
