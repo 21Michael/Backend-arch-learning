@@ -269,3 +269,16 @@ Learning backend architecture, security, optimization, NodeJS...
       - **Ability to write custom events;**
     - [**Modularity (Require Process);**](4\)NodeJS/Engine-mechanisms/Modularity_(Require_Process).md) ✅
   - [**<ins>PROS / CONS;</ins>**](4\)NodeJS/PROS-CONS/PROS_CONS.md)
+
+## 5) Devops staff:
+  - [**<ins>DOCKER:</ins>**]()
+    1) client;
+    2) daemon;
+    3) registries;
+    4) store / hub;
+    5) images:
+      - commands;
+    6) container:
+      - VM vs Container
+      - commands;
+  - [**<ins>CI/CD</ins>**]() 
