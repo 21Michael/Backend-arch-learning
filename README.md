@@ -209,10 +209,17 @@ Learning backend architecture, security, optimization, NodeJS...
           - **SAGA pattern**: ✅
             - Choreography-based saga; 
             - Orchestration-based saga (event bus);
-      - [**Deployment Tools:**](3\)Architecture/3.5\)Software-Architectural-pattern/2\)Distributed-architecture/Microservices-architecture-pattern/Deployment_Tools.md)
-        - Docker; ✅
-        - Kubernetes; ✅
-        - Skaffold; ✅
+      - **Microservices Orchestration Cloud Services:**
+        - **<ins>AWS:</ins>**
+          - [**ECR;**]()
+          - [**ECS:**](3\)Architecture/3.5\)Software-Architectural-pattern/2\)Distributed-architecture/Microservices-architecture-pattern/Microservices-Orchestration-Cloud-Services/AWS/ECS/ECS.md)
+            - EC2; ✅
+            - Fargate; ✅
+          - [**EKS / Kubernetes;**](3\)Architecture/3.5\)Software-Architectural-pattern/2\)Distributed-architecture/Microservices-architecture-pattern/Microservices-Orchestration-Cloud-Services/AWS/EKS-Kubernetes/EKS_Kubernetes.md)
+            - EC2 Node; ✅
+            - Fargate; ✅
+            - EC2 NodesGroup; ✅
+          - [**Lambda;**]()
       - [**Deployment Env:**](3\)Architecture/3.5\)Software-Architectural-pattern/2\)Distributed-architecture/Microservices-architecture-pattern/Deployment_Flow.md)
         - SSR vs CSR; ✅
         - Share common logic between services: ✅
@@ -282,3 +289,4 @@ Learning backend architecture, security, optimization, NodeJS...
       - VM vs Container
       - commands;
   - [**<ins>CI/CD</ins>**]() 
+    - Skaffold;
