@@ -209,7 +209,7 @@ Learning backend architecture, security, optimization, NodeJS...
           - **SAGA pattern**: ✅
             - Choreography-based saga; 
             - Orchestration-based saga (event bus);
-      - **Microservices Orchestration Cloud Services:**
+      - **Microservices Orchestration Cloud Management:**
         - **<ins>AWS:</ins>**
           - [**ECR;**]()
           - [**ECS:**](3\)Architecture/3.5\)Software-Architectural-pattern/2\)Distributed-architecture/Microservices-architecture-pattern/Microservices-Orchestration-Cloud-Services/AWS/ECS/ECS.md)
@@ -263,7 +263,7 @@ Learning backend architecture, security, optimization, NodeJS...
       - JIT Compiler; ✅
     - [**Garbage collector;**](4\)NodeJS/ENGINE-V8/Garbage-collector/Garbage_collector.md)
   - **<ins>LIBUV</ins>:**
-    - [Asynchronicity:](4\)NodeJS/Engine-mechanisms/NodeJS/Asynchronicity_Event Loop.md)
+    - [Asynchronicity:](4\)NodeJS/LIBUV/Asynchronicity_Event_Loop.md)
       - Event Loop; ✅
       - Multi-threads; ✅
       - Process flow; ✅

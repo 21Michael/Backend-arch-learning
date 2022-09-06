@@ -110,24 +110,24 @@ the client is written assuming that the reply won’t be received immediately.
 
 ![link](https://drive.google.com/uc?id=1C9uFbjk_vbTCBQyO70mt6MtZVVWcbHZo)
 
-### - <ins>Interaction types:
+### <ins>Interaction types:
 
-### 1) Message:
+1) **Message:**  
 **Link:** https://github.com/21Michael/Backend-arch-learning/blob/main/1)%20Computer%20Networks/Communication%20paradigms/Messages.md
 
-### 2) Request / Response and Asynchronous Request / Response:
+2) **Request / Response and Asynchronous Request / Response:**  
 **Link:** https://github.com/21Michael/Backend-arch-learning/blob/main/1)%20Computer%20Networks/Communication%20paradigms/Request-Response.md
 
-### 3) One-way notifications:
+3) **One-way notifications:**  
 **Link:**
 
-### 4) Publish / Subscribe:
+4) **Publish / Subscribe:**   
 **Link:** https://github.com/21Michael/Backend-arch-learning/blob/main/1)%20Computer%20Networks/Communication%20paradigms/Publisher-Subscriber.md
 
-### 5) Publish / Async-Response:
+5) **Publish / Async-Response:**  
 **Link:**
 
-### - <ins>Message broker:
+### <ins>Message broker:  
 **Link:** https://github.com/21Michael/Backend-arch-learning/blob/main/1)%20Computer%20Networks/Communication%20paradigms/Message%20queue%20(async%20communication).md
 
 ## **<h3>Circuit breaker patterns:</h3>** 
