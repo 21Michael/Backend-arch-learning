@@ -10,7 +10,7 @@ what s/he can do. This extra work often requires a database lookup.
   - **<ins>Cookie (most common used)</ins>** - transport mechanism that transports small piece 
     of data that a server sends to the user's web browser. The browser may store it 
     and send it back with later requests to the same server.                 
-    __ 
+    __  
     **<ins>Pros:**</ins> managed automatically by browser, easy to Implement, has many customizations,
     fast.  
     **<ins>Const:**</ins> exposed to CSRF attacks, SameSite protection incompatible 
