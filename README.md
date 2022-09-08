@@ -211,7 +211,7 @@ Learning backend architecture, security, optimization, NodeJS...
             - Orchestration-based saga (event bus);
       - **Microservices Orchestration Cloud Management:**
         - **<ins>AWS:</ins>**
-          - [**ECR;**]()
+          - [**ECR;**](3\)Architecture/3.5\)Software-Architectural-pattern/2\)Distributed-architecture/Microservices-architecture-pattern/Microservices-Orchestration-Cloud-Services/AWS/ECR/ECR.md)
           - [**ECS:**](3\)Architecture/3.5\)Software-Architectural-pattern/2\)Distributed-architecture/Microservices-architecture-pattern/Microservices-Orchestration-Cloud-Services/AWS/ECS/ECS.md)
             - EC2; ✅
             - Fargate; ✅
@@ -279,14 +279,39 @@ Learning backend architecture, security, optimization, NodeJS...
 
 ## 5) Devops staff:
   - [**<ins>DOCKER:</ins>**]()
-    1) client;
-    2) daemon;
-    3) registries;
-    4) store / hub;
-    5) images:
-      - commands;
-    6) container:
+    - Client;
+    - Daemon;
+    - Registries;
+    - Store / HUB;
+    - Images:
+      - console commands;
+    - Container:
       - VM vs Container
-      - commands;
-  - [**<ins>CI/CD</ins>**]() 
-    - Skaffold;
+      - console commands;
+    - Docker File:
+      - dockerignore;
+      - directives;
+      - file commands;
+      - console commands;
+  - [**<ins>CI/CD</ins>**]()
+    1. **Continuous Integration (CI):**
+        1. <ins>**Store the code:**</ins> 
+            - AWS Code Commit;
+            - GitHub;
+        2. <ins>**Test / build:**</ins> 
+            - AWS Code Build;
+            - Jenkins CI;
+        3. <ins>**Trigger feedback if passed / failed:**</ins> 
+            - AWS SNS;
+            - AWS Lambda;
+            - AWS CloudWatch;
+    2. **Continuous Deployment (CD):**
+        4. <ins>**Deploy if passed:**</ins> 
+            - AWS Code Deploy;
+            - AWS Elastic Bean Stalk;
+            - Cloud Formation;
+            - Jenkins CD;
+        5. <ins>**Provision (versioning);**</ins>
+    - **CI/CD Tools:**
+      - AWS Code Pipeline;
+      - Jenkins;
