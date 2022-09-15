@@ -288,11 +288,15 @@ Learning backend architecture, security, optimization, NodeJS...
     - Container:
       - VM vs Container
       - console commands;
-    - Docker File:
+    - [**<ins>Docker File:</ins>**]()
       - dockerignore;
       - directives;
       - file commands;
       - console commands;
+    - [**<ins>Volume</ins>**]()
+      - console commands;
+      - options;
+    - [**<ins>Compose</ins>**]()
   - [**<ins>CI/CD</ins>**]()
     1. **Continuous Integration (CI):**
         1. <ins>**Store the code:**</ins> 
