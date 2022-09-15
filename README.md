@@ -278,7 +278,7 @@ Learning backend architecture, security, optimization, NodeJS...
   - [**<ins>PROS / CONS;</ins>**](4\)NodeJS/PROS-CONS/PROS_CONS.md)
 
 ## 5) Devops staff:
-  - [**<ins>DOCKER:</ins>**]()
+  - [**<ins>DOCKER:</ins>**](5\)Devops-staff/DOCKER/docker.md)
     - Client;
     - Daemon;
     - Registries;
@@ -288,15 +288,17 @@ Learning backend architecture, security, optimization, NodeJS...
     - Container:
       - VM vs Container
       - console commands;
-    - [**<ins>Docker File:</ins>**]()
+    - [**<ins>Docker File:</ins>**](5\)Devops-staff/DOCKER/docker_file.md)
       - dockerignore;
       - directives;
       - file commands;
       - console commands;
-    - [**<ins>Volume</ins>**]()
+    - [**<ins>Volume</ins>**](5\)Devops-staff/DOCKER/docker_storages.md)
       - console commands;
       - options;
-    - [**<ins>Compose</ins>**]()
+    - [**<ins>Compose</ins>**](5\)Devops-staff/DOCKER/docker_compose.md)
+      - file commands;
+      - console commands;
   - [**<ins>CI/CD</ins>**]()
     1. **Continuous Integration (CI):**
         1. <ins>**Store the code:**</ins> 
