@@ -285,6 +285,14 @@ of containers.
           // Example: 
           docker container run -i -t --name proxy ubuntu bash
         ``` 
+      - `--net`:  
+        Open the terminal inside the container:
+        ```text
+          docker container run --net <network name> <container name>
+        
+          // Example: 
+          docker container run -d -p 80:80 --name proxy --net frontend nginx
+        ``` 
   - **EXECUTE COMMANDS IN RUNNING CONTAINER:**
      ```text
        docker container exec -it <container name> <command line tool>

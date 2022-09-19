@@ -299,6 +299,10 @@ Learning backend architecture, security, optimization, NodeJS...
     - [**<ins>Compose</ins>**](5\)Devops-staff/DOCKER/docker_compose.md)
       - file commands;
       - console commands;
+    - [**<ins>Network</ins>**](5\)Devops-staff/DOCKER/docker_networks.md)
+      - drivers;
+      - console commands;
+      - default / network net / docker-compose networks
   - [**<ins>CI/CD</ins>**]()
     1. **Continuous Integration (CI):**
         1. <ins>**Store the code:**</ins> 
