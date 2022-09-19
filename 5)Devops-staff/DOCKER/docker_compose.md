@@ -118,7 +118,13 @@
           - ./html:/usr/share/nginx/html
     ```
   - **DEPENDS ON:**  
-    First service will wait till the service that it depends on wil run or its condition;
+    First service will wait till the service that it depends on wil run or its condition;  
+    **Conditions:**  
+      - **service_started:** is an equivalent of the short syntax described above
+      - **service_healthy:** specifies that a dependency is expected to be "healthy"
+        (as indicated by healthcheck) before starting a dependent service.
+      - **service_completed_successfully:** specifies that a dependency is expected to run
+        to successful completion before starting a dependent service.
     ```yaml
     version: "2.4"
 
@@ -180,9 +186,9 @@
             image: mongo:4
             container_name: storage
             volumes:
-            - ./data:/data/db
+              - ./data:/data/db
             networks: # container access to network
-            - db
+              - db
         
         networks: # networks
           back:
@@ -190,6 +196,46 @@
           db:
             driver: bridge
      ```
+  - **SET THE LINKS:**  
+    Aliases for the network (IP) name of the service;
+    ```yaml
+      links:
+        - <server IP name>:<server port name>
+    
+      #Example:    
+      version: "2.4"
+
+      services:
+        webapp:
+          image: nginx:alpine
+          container_name: webapp
+          build: ./webapp # path to the dockerfile
+          ports:
+            - 80:80
+          links:
+            - webapp
+          volumes:
+            - ./html:/usr/share/nginx/html
+          networks:
+            - back
+        
+        webhost:
+          image: nginx:alpine
+          container_name: webhost
+          build: ./webhost # path to the dockerfile
+          links:
+            - webhost
+          ports:
+            - 8080:80
+          volumes:
+            - ./html:/usr/share/nginx/html
+          networks:
+            - back
+      
+      networks:
+        back:
+          driver: bridge
+    ```
   - **SET THE DOCKER FILE PATH:**  
     For big projects cna be useful separate configs in different dockerfiles;
     ```yaml
@@ -223,3 +269,4 @@
             driver: bridge
      ```
 ### Console commands:
+https://docs.docker.com/engine/reference/commandline/compose/
