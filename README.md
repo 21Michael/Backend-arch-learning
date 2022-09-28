@@ -278,7 +278,20 @@ Learning backend architecture, security, optimization, NodeJS...
   - [**<ins>PROS / CONS;</ins>**](4\)NodeJS/PROS-CONS/PROS_CONS.md)
 
 ## 5) Devops staff:
-  - [**<ins>DOCKER:</ins>**](5\)Devops-staff/DOCKER/docker.md)
+  - [**<ins>Infrastructure as code (IaC):</ins>**](5\)Devops-staff/IaC/IaC.md)
+      1) **Initial Infrastructure Setup Phase:**
+          - Provisioning of the infrastructure
+          - Configuration of the infrastructure
+      2) **Maintaining Infrastructure Phase:**
+          - Adjusting the infrastructure
+          - Removal and addition of components
+      3) **Initial Software setup Phase:**
+          - Initial installation of software
+          - Initial configuration of software
+      4) **Maintaining Software Phase:**
+          - Software Updates
+          - Reconfiguration of software
+  - [**<ins>DOCKER:</ins>**](5\)Devops-staff/DOCKER/docker.md) ✅
     - Client;
     - Daemon;
     - Registries;
@@ -288,18 +301,18 @@ Learning backend architecture, security, optimization, NodeJS...
     - Container:
       - VM vs Container
       - console commands;
-    - [**<ins>Docker File:</ins>**](5\)Devops-staff/DOCKER/docker_file.md)
+    - [**<ins>Docker File:</ins>**](5\)Devops-staff/DOCKER/docker_file.md) ✅
       - dockerignore;
       - directives;
       - file commands;
       - console commands;
-    - [**<ins>Volume</ins>**](5\)Devops-staff/DOCKER/docker_storages.md)
+    - [**<ins>Volume</ins>**](5\)Devops-staff/DOCKER/docker_storages.md) ✅
       - console commands;
       - options;
-    - [**<ins>Compose</ins>**](5\)Devops-staff/DOCKER/docker_compose.md)
+    - [**<ins>Compose</ins>**](5\)Devops-staff/DOCKER/docker_compose.md) ✅
       - file commands;
       - console commands;
-    - [**<ins>Network</ins>**](5\)Devops-staff/DOCKER/docker_networks.md)
+    - [**<ins>Network</ins>**](5\)Devops-staff/DOCKER/docker_networks.md) ✅
       - drivers;
       - console commands;
       - default / network net / docker-compose networks
