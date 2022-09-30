@@ -278,7 +278,7 @@ Learning backend architecture, security, optimization, NodeJS...
   - [**<ins>PROS / CONS;</ins>**](4\)NodeJS/PROS-CONS/PROS_CONS.md)
 
 ## 5) Devops staff:
-  - [**<ins>Infrastructure as code (IaC):</ins>**](5\)Devops-staff/IaC/IaC.md)
+  - [**<ins>Infrastructure as code (IaC):</ins>**](5\)Devops-staff/IaC/IaC.md) ✅
       1) **Initial Infrastructure Setup Phase:**
           - Provisioning of the infrastructure
           - Configuration of the infrastructure
@@ -291,31 +291,43 @@ Learning backend architecture, security, optimization, NodeJS...
       4) **Maintaining Software Phase:**
           - Software Updates
           - Reconfiguration of software
-  - [**<ins>DOCKER:</ins>**](5\)Devops-staff/DOCKER/docker.md) ✅
-    - Client;
-    - Daemon;
-    - Registries;
-    - Store / HUB;
-    - Images:
-      - console commands;
-    - Container:
-      - VM vs Container
-      - console commands;
-    - [**<ins>Docker File:</ins>**](5\)Devops-staff/DOCKER/docker_file.md) ✅
-      - dockerignore;
-      - directives;
-      - file commands;
-      - console commands;
-    - [**<ins>Volume</ins>**](5\)Devops-staff/DOCKER/docker_storages.md) ✅
-      - console commands;
-      - options;
-    - [**<ins>Compose</ins>**](5\)Devops-staff/DOCKER/docker_compose.md) ✅
-      - file commands;
-      - console commands;
-    - [**<ins>Network</ins>**](5\)Devops-staff/DOCKER/docker_networks.md) ✅
-      - drivers;
-      - console commands;
-      - default / network net / docker-compose networks
+  - **Tools:**  
+    - **Infrastructure Setup Phase:**  
+      - [**<ins>Terraform:</ins>**](5\)Devops-staff/Terraform/terraform.md)
+        - **Declare File Syntax:**
+          - Providers;
+          - Resources; 
+          - Data Sources;
+          - State;
+          - Variables (Input / Output);
+          - Env variables;
+        - **Commands;**
+    - **Software setup Phase:**    
+      - [**<ins>DOCKER:</ins>**](5\)Devops-staff/DOCKER/docker.md) ✅
+        - Client;
+        - Daemon;
+        - Registries;
+        - Store / HUB;
+        - Images:
+          - console commands;
+        - Container:
+          - VM vs Container
+          - console commands;
+        - [**<ins>Docker File:</ins>**](5\)Devops-staff/DOCKER/docker_file.md) ✅
+          - dockerignore;
+          - directives;
+          - file commands;
+          - console commands;
+        - [**<ins>Volume</ins>**](5\)Devops-staff/DOCKER/docker_storages.md) ✅
+          - console commands;
+          - options;
+        - [**<ins>Compose</ins>**](5\)Devops-staff/DOCKER/docker_compose.md) ✅
+          - file commands;
+          - console commands;
+        - [**<ins>Network</ins>**](5\)Devops-staff/DOCKER/docker_networks.md) ✅
+          - drivers;
+          - console commands;
+          - default / network net / docker-compose networks
   - [**<ins>CI/CD</ins>**]()
     1. **Continuous Integration (CI):**
         1. <ins>**Store the code:**</ins> 
