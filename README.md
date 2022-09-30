@@ -301,6 +301,7 @@ Learning backend architecture, security, optimization, NodeJS...
           - State;
           - Variables (Input / Output);
           - Env variables;
+          - Modules;
         - **Commands;**
     - **Software setup Phase:**    
       - [**<ins>DOCKER:</ins>**](5\)Devops-staff/DOCKER/docker.md) ✅
