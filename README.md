@@ -293,7 +293,7 @@ Learning backend architecture, security, optimization, NodeJS...
           - Reconfiguration of software
   - **Tools:**  
     - **Infrastructure Setup Phase:**  
-      - [**<ins>Terraform:</ins>**](5\)Devops-staff/Terraform/terraform.md)
+      - [**<ins>Terraform:</ins>**](5\)Devops-staff/Terraform/terraform.md) ✅
         - **Declare File Syntax:**
           - Providers;
           - Resources; 
