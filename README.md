@@ -63,7 +63,7 @@ Learning backend architecture, security, optimization, NodeJS...
     - [One-way notifications](1\)Computer-Networks/Communication-paradigms/One-way_notifications.md)  
     - [Publisher-Subscriber](1\)Computer-Networks/Communication-paradigms/Publisher_Subscriber.md) 
     - [Publish / Async-Response (publish/subscribe + request/response)](1\)Computer-Networks/Communication-paradigms/Publish_Async-Response.md) 
-    - [Message queue (async communication):](1\)Computer-Networks/Communication-paradigms/Message_queue_(async communication).md) 
+    - [Message queue (async communication):](1\)Computer-Networks/Communication-paradigms/Message_queue_(async_communication).md) 
       - Messaging architecture:
         - Broker-less messaging  ✅
         - Broker messaging (Event-driven architecture)  ✅
@@ -84,9 +84,9 @@ Learning backend architecture, security, optimization, NodeJS...
         - [Authentication/Authorization token storage/transport](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication-Authorization_token_storage_transport.md); ✅
         - Authentication:
           - [Basic HTTP Authentication](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication/Basic_HTTP_Authentication.md); ✅
-          - [Token based Authentication (Bearer token):](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication/Token-based-Authentication-(Bearer token)/Token_based_Authentication_(Bearer-token).md)
-            - [Access token (session-id)](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication/Token-based-Authentication-(Bearer token)/Access_token_(session-id).md); ✅
-            - [Self-contained token (JWT / JOSE)](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication/Token-based-Authentication-(Bearer token)/Self-contained_token_(JWT).md);  ✅
+          - [Token based Authentication (Bearer token):](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication/Token-based-Authentication-(Bearer_token)/Token_based_Authentication_(Bearer-token).md)
+            - [Access token (session-id)](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication/Token-based-Authentication-(Bearer_token)/Access_token_(session-id).md); ✅
+            - [Self-contained token (JWT / JOSE)](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication/Token-based-Authentication-(Bearer_token)/Self-contained_token_(JWT).md);  ✅
           - [Open ID Connect Authentication (OAuth 2.0)](2\)Security/API-Security/Information-security/Access-control-techniques/Authentication/Open_ID_Connect_Authentication_(OAuth2.0).md); ✅
         - Authorization:
           - [SSO](2\)Security/API-Security/Information-security/Access-control-techniques/Authorization/SSO.md); ✅
